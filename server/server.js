@@ -55,6 +55,8 @@ app.prepare().then(async () => {
           console.log(
             `Failed to register APP_UNINSTALLED webhook: ${response.result}`
           );
+        } else {
+          console.log('webhook registered!');
         }
 
         // Redirect to app with shop parameter upon auth
